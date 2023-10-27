@@ -1,0 +1,54 @@
+/* about */
+.fs-6{
+    font-size: 24px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+.fw-bold{
+    font-weight: bold;
+}
+main .container{
+    margin-bottom: 70px;
+}
+.images--about{
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+.images--about2{
+    justify-content: start;
+}
+.images--about img{
+    height: 300px;
+    width: 100%;
+}
+.col-md-6 p{
+    line-height: 2;
+    opacity: .7;
+}
+.title--about{
+    display: grid;
+    place-content: start;
+    text-align: left;
+}
+.container .ligne{
+    justify-content: start;
+    text-align: left;
+    background: black;
+    height: 3px;
+    width: 70px;
+}
+.GALLERY img{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.GALLERY img:hover{
+    filter: brightness(100%);
+    transition: .3s;
+
+}

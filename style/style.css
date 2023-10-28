@@ -52,6 +52,12 @@ main .container{
     transition: .3s;
 
 }
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
 /* team */
 .rounded-circle--team img{
   
@@ -70,4 +76,3 @@ main .container{
 .modal-backdrop{
     z-index: 1;
 }
-

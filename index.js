@@ -1,14 +1,12 @@
 function handleScroll() {
     const elements = document.querySelectorAll('.fade-in-element');
     for (let i = 0; i < elements.length; i++) {
-        if (isElementInViewport(elements[i])) {
+        if (viewinSecrin(elements[i])) {
             elements[i].style.opacity = 1;
         }
     }
 }
-
-// Function to check if an element is in the viewport
-function isElementInViewport(el) {
+function viewinSecrin(el) {
     const rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&

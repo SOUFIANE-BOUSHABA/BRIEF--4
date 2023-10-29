@@ -15,3 +15,27 @@ function viewinSecrin(el) {
 }
 window.addEventListener('scroll', handleScroll);
 handleScroll();
+
+
+var goBack = document.getElementById("scrollToTopBtn");
+
+window.onscroll = function () {
+  if ( document.documentElement.scrollTop > 20) {
+    goBack.style.display = "block";
+  } else {
+    goBack.style.display = "none";
+  }
+};
+
+function scroltoTOP() {
+    var valuescroll = document.documentElement.scrollTop;
+
+    if (valuescroll > 0) {
+        window.requestAnimationFrame(scroltoTOP);
+        window.scrollTo(0, valuescroll - valuescroll / 12);
+    }
+    }
+
+goBack.addEventListener("click", function () {
+  scroltoTOP();
+});

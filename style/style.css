@@ -46,6 +46,9 @@ main .container{
     height: 3px;
     width: 70px;
 }
+.container .row .col-md-6 p{
+    text-align: justify;
+}
 .GALLERY img{
     filter: brightness(80%);
     cursor: pointer;

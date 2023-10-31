@@ -459,16 +459,7 @@
     </section>
 </footer>
 
-<script>
-  var mainImage = document.getElementById("imageprin");
-  var smallImages = document.querySelectorAll("#image1, #image2, #image3");
-  for (let i = 0; i < smallImages.length; i++) {
-      smallImages[i].addEventListener("click", function() {
-          var newImageSrc = smallImages[i].getAttribute("src");
-          mainImage.setAttribute("src", newImageSrc);
-      });
-  }
-</script>
+
 <script src="index.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

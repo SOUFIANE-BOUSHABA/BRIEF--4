@@ -43,3 +43,13 @@ function scroltoTOP() {
 goBack.addEventListener("click", function () {
   scroltoTOP();
 });
+
+
+var mainImage = document.getElementById("imageprin");
+  var smallImages = document.querySelectorAll("#image1, #image2, #image3");
+  for (let i = 0; i < smallImages.length; i++) {
+      smallImages[i].addEventListener("click", function() {
+          var newImageSrc = smallImages[i].getAttribute("src");
+          mainImage.setAttribute("src", newImageSrc);
+      });
+  }

@@ -11,9 +11,7 @@ header{
 a{
     text-decoration: none;
 }
-.fw-bold{
-    font-weight: bold;
-}
+
 main .container{
     margin-bottom: 70px;
 }
@@ -149,3 +147,43 @@ footer .row .col-5 .btn{
 .h-100vh{
     height: 100vh;
 }
+
+/*detaill*/
+h5{
+    color: #00000089;
+}
+.descr{
+    color:#0000006c ;
+}
+.care{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    padding: 0px;
+}
+.one{
+    background-color: black;
+}
+.tow{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.tree{
+    background-color: rgba(0, 0, 0, 0.104);
+}
+.dropdown-item{
+    max-width: 500px;
+    min-height:100px ;
+}
+
+.dropdown-toggle{
+    border-bottom: 2px solid black;
+
+    
+}
+.formulair{
+    min-width: 400px;
+}
+img{
+    border-radius: 10px;
+}
+/*******************/

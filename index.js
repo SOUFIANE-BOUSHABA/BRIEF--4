@@ -1,3 +1,11 @@
+
+
+let imag1 =document.getElementById('image1');
+let imag2 =document.getElementById('image2');
+let imag3 =document.getElementById('image3');
+let image4=document.getElementById("imageprin") ;
+const goBack = document.getElementById("scrollToTopBtn");
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -7,11 +15,6 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-let imag1 =document.getElementById('image1');
-let imag2 =document.getElementById('image2');
-let imag3 =document.getElementById('image3');
-let image4=document.getElementById("imageprin") ;
 
   imag1.addEventListener("click",function(){
     if( image4.src == 'file:///C:/Users/Youcode/Desktop/BRIEF--4/images/detail/sofa%20princip.png'){
@@ -72,7 +75,7 @@ window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 
-var goBack = document.getElementById("scrollToTopBtn");
+
 
 window.onscroll = function () {
   if ( document.documentElement.scrollTop > 20) {

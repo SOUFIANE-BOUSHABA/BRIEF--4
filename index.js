@@ -1,7 +1,4 @@
 
-
-
-
 function handleScroll() {
     const elements = document.querySelectorAll('.fade-in-element');
     for (let i = 0; i < elements.length; i++) {

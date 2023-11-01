@@ -21,7 +21,7 @@ window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 
-var goBack = document.getElementById("scrollToTopBtn");
+
 
 window.onscroll = function () {
   if ( document.documentElement.scrollTop > 20) {

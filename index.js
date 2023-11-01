@@ -1,55 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 
-let imag1 =document.getElementById('image1');
-let imag2 =document.getElementById('image2');
-let imag3 =document.getElementById('image3');
-let image4=document.getElementById("imageprin") ;
-
-  imag1.addEventListener("click",function(){
-    if( image4.src == 'file:///C:/Users/Youcode/Desktop/BRIEF--4/images/detail/sofa%20princip.png'){
-    image4.src = 'images/detail/sofa2.png'
-   imag1.src ='images/detail/ptitprin.png' ;
-
-    }
-    else{
-      image4.src='images/detail/sofa princip.png';
-      imag1.src='images/detail/sofa 2.png'
-    
-    }
-  });
-  imag2.addEventListener("click",function(){
-    if( image4.src == 'file:///C:/Users/Youcode/Desktop/BRIEF--4/images/detail/sofa%20princip.png'){
-      image4.src = 'images/detail/sofa1.png'
-     imag2.src ='images/detail/ptitprin.png' ;
-
-      }
-      else{
-        image4.src='images/detail/sofa princip.png';
-        imag2.src='images/detail/sofa 3.png'
-      
-      }
-  
-  });
-  imag3.addEventListener("click",function(){
-    if( image4.src == 'file:///C:/Users/Youcode/Desktop/BRIEF--4/images/detail/sofa%20princip.png'){
-      image4.src = 'images/detail/sofa3.png'
-     imag3.src ='images/detail/ptitprin.png' ;
-
-      }
-      else{
-        image4.src='images/detail/sofa princip.png';
-        imag3.src='images/detail/sofa 4.png'
-      
-      }
-  });
 
 
 
@@ -61,7 +10,7 @@ function handleScroll() {
         }
     }
 }
-function viewinSecrin(el) {
+function viewinSecrin(el) { 
     const rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&
@@ -94,3 +43,13 @@ function scroltoTOP() {
 goBack.addEventListener("click", function () {
   scroltoTOP();
 });
+
+
+var mainImage = document.getElementById("imageprin");
+  var smallImages = document.querySelectorAll("#image1, #image2, #image3");
+  for (let i = 0; i < smallImages.length; i++) {
+      smallImages[i].addEventListener("click", function() {
+          var newImageSrc = smallImages[i].getAttribute("src");
+          mainImage.setAttribute("src", newImageSrc);
+      });
+  }

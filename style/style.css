@@ -187,3 +187,116 @@ img{
     border-radius: 10px;
 }
 /*******************/
+
+:root{
+    --dark-color: #000;
+    --light-color: #333;
+}
+p{
+    color: var(--light-color);
+}
+.carousel-inner .d-block{
+    height: 500PX;
+    border-radius: calc(.25rem );
+}
+.carousel-caption{
+    text-align: start;
+    bottom: 80px;
+}
+.container .img-fluid{
+    height: auto;
+    width: 80%;
+    
+}
+.container .item{
+    margin-top: 90px;
+}
+.container .titel{
+    color: var(--dark-color);
+    font-size: 2.4rem;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+.card .card-body i{
+    font-size: 30px;
+}
+.card-deck-second .card {
+    background-color: #f6f6f6;
+  }
+  .no-gutters{
+    display: flex;
+    justify-content: space-between;
+  }
+
+@media screen and (max-width: 600px){
+    .img-fluid {
+        max-width: 120%;
+        height: auto;
+        margin-top: 20px;
+      }
+      .carousel-inner .d-block{
+        height: 200PX;
+        border-radius: calc(.28rem );
+    }
+}
+.form-inline{
+    display: flex;
+    justify-content: center;
+}
+.parent3 .card-title{
+    font-size: 0.8rem;
+}
+.parent3 .prix{
+    display: flex;
+    justify-content: space-between;
+}
+.available .card-body{
+    margin-top: 6rem !important;
+}
+.available .card-body .Second{
+    font-size: 1.6rem;
+}
+/* =========footer=========== */
+
+footer a:hover{
+    opacity: .7;
+    }
+    .social--media a{
+        margin-right: 10px;
+    }
+    .social--media a i{
+        color: white;
+    }
+    footer .row .col-5 .btn{
+        border:1px solid white;
+        color: white;
+    }
+    
+    /* team */
+    .rounded-circle--team img{
+      
+        width: 220px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    
+    .arousel-control-next-icon, .carousel-control-next {
+        color: black;
+    }
+    
+    .modal{
+        z-index: 100;
+    }
+    .modal-backdrop{
+        z-index: 1;
+    }
+    .h-100vh{
+        height: 100vh;
+    }
+    .text-reset {
+        color: #fff !important;
+      }
+      .text-uppercase{
+        margin-bottom: 40px;
+      }

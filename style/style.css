@@ -90,27 +90,6 @@ main .container{
 }
 
 
-
-#scrollToTopBtn {
-    height: 50px;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1;
-    background-color: #6e6e6e;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  #scrollToTopBtn:hover {
-    background-color: rgb(17, 17, 17);
-  }
-
   
 footer a:hover{
 opacity: .7;
@@ -263,44 +242,7 @@ p{
 
 /* =========footer=========== */
 
-footer a:hover{
-    opacity: .7;
-    }
-    .social--media a{
-        margin-right: 10px;
-    }
-    .social--media a i{
-        color: white;
-    }
-    footer .row .col-5 .btn{
-        border:1px solid white;
-        color: white;
-    }
-    
-    /* team */
-    .rounded-circle--team img{
-      
-        width: 220px;
-        height: 200px;
-        border-radius: 100%;
-    }
-    
-    .arousel-control-next-icon, .carousel-control-next {
-        color: black;
-    }
-    
-    .modal{
-        z-index: 100;
-    }
-    .modal-backdrop{
-        z-index: 1;
-    }
-    .h-100vh{
-        height: 100vh;
-    }
     .text-reset {
         color: #fff !important;
     }
-      .text-uppercase{
-        margin-bottom: 40px;
-    }
+      

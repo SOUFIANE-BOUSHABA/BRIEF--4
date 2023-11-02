@@ -239,6 +239,14 @@ p{
         height: 200PX;
         border-radius: calc(.28rem );
     }
+    .container .item {
+        text-align: center;
+      }
+      [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+      }
 }
 .form-inline{
     display: flex;
@@ -257,6 +265,7 @@ p{
 .available .card-body .Second{
     font-size: 1.6rem;
 }
+
 /* =========footer=========== */
 
 footer a:hover{
@@ -296,7 +305,7 @@ footer a:hover{
     }
     .text-reset {
         color: #fff !important;
-      }
+    }
       .text-uppercase{
         margin-bottom: 40px;
-      }
+    }

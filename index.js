@@ -58,21 +58,53 @@ function boton(){
     var comentaire = document.forms["form1"]["comentaire"];
     
      if(!(/^[a-zA-Z]/g).test(name.value)){
-        alert("entre votre nom correct");
-        name.focus();
+        Swal.fire({
+            position: 'bottom-end',
+            icon: 'warning',
+            title: 'enter a valid name',
+            showConfirmButton: false,
+            timer: 1500
+          })
+          
         return false;
      }
      if(!(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gi).test(email.value)){
-        alert("entre votre email ");
-        email.focus();
+        Swal.fire({
+            position: 'bottom-end',
+            icon: 'warning',
+            title: 'enter a valid email',
+            showConfirmButton: false,
+            timer: 1500
+          })
         return false;
      }
       if(!(/^[a-zA-Z]/g).test(comentaire.value)){
-        alert("entre votre commentaire");
-        comentaire.focus();
+        Swal.fire({
+            position: 'bottom-end',
+            icon: 'warning',
+            title: 'enter a valid comment',
+            showConfirmButton: false,
+            timer: 1500
+          })
         return false;
      }
-     return true;
+     const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Signed in successfully'
+      })
+      return true;
     
      }
     

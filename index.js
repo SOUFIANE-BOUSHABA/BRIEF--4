@@ -51,4 +51,28 @@ handleScroll();
 // goBack.addEventListener("click", function () {
 //   scroltoTOP();
 // });
-
+// =======================contact=====================
+function boton(){
+    var email = document.forms["form1"]["email"];
+    var name = document.forms["form1"]["name"];
+    var comentaire = document.forms["form1"]["comentaire"];
+    
+     if(!(/^[a-zA-Z]/g).test(name.value)){
+        alert("entre votre nom correct");
+        name.focus();
+        return false;
+     }
+     if(!(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/gi).test(email.value)){
+        alert("entre votre email ");
+        email.focus();
+        return false;
+     }
+      if(!(/^[a-zA-Z]/g).test(comentaire.value)){
+        alert("entre votre commentaire");
+        comentaire.focus();
+        return false;
+     }
+     return true;
+    
+     }
+    

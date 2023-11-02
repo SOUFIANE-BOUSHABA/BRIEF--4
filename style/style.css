@@ -88,10 +88,10 @@ main .container{
 }
 
 
-
   footer a{
       color: #fff;
   }
+
 footer a:hover{
 opacity: .7;
 }
@@ -105,6 +105,7 @@ footer .row .col-5 .btn{
     border:1px solid white;
     color: white;
 }
+
 .images--about{
     height: 250px;
     position: relative;
@@ -180,26 +181,6 @@ footer .row .col-5 .btn{
 }
 
 
-
-#scrollToTopBtn {
-    height: 50px;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1;
-    background-color: #6e6e6e;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  #scrollToTopBtn:hover {
-    background-color: rgb(17, 17, 17);
-  }
 /* team */
 .rounded-circle--team img{
   
@@ -234,6 +215,7 @@ h5{
     width: 30px;
     margin: 10px;
     padding: 0px;
+    cursor: pointer;
 }
 .one{
     background-color: black;
@@ -243,6 +225,13 @@ h5{
 }
 .tree{
     background-color: rgba(0, 0, 0, 0.104);
+}
+.palett{
+    background-color: rgba(0, 0, 0, 0.104);
+}
+.palett:hover{
+    color: #fff;
+    background-color: black;
 }
 .dropdown-item{
     max-width: 500px;
@@ -260,7 +249,7 @@ h5{
 img{
     border-radius: 10px;
 }
-/*******************/
+
 
 :root{
     --dark-color: #000;
@@ -313,6 +302,9 @@ p{
         height: 200PX;
         border-radius: calc(.28rem );
     }
+    .container .item {
+        text-align: center;
+      }
 }
 .form-inline{
     display: flex;
@@ -331,7 +323,29 @@ p{
 .available .card-body .Second{
     font-size: 1.6rem;
 }
+
+/* =================contact================== */
+.g-3{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
+
+p.text-black-50.bg-white {
+    margin-bottom: 0;
+}
+
 /* =========footer=========== */
+
+
+    .text-reset {
+        color: #fff !important;
+    }
+      
+
 .text-reset {
      color: white !important; 
 }
+
+

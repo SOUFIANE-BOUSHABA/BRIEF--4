@@ -91,21 +91,21 @@
         <div class="col-lg-7 ">
          
             <div class="col">
-              <img src="images/detail/sofa66.png" id="imageprin" class="img-fluid" alt="Main Sofa Image">
+              <img src="images/detail/SS.png" id="imageprin" class="img-fluid" alt="Main Sofa Image">
             </div>
             <div class="col">
               <div class="row gap-2 mt-2" id="image">
                 <div class="col-3">
-                  <img src="images/detail/sofa22.png" id="image1" class="img-fluid" alt="Sofa Image 1">
+                  <img src="images/detail/sofa1.png" id="image1" class="img-fluid" alt="Sofa Image 1">
                 </div>
                 <div class="col-3">
-                  <img src="images/detail/sofa44.png" id="image2" class="img-fluid" alt="Sofa Image 2">
+                  <img src="images/detail/sofa2.png" id="image2" class="img-fluid" alt="Sofa Image 2">
                 </div>
                 <div class="col-3">
-                  <img src="images/detail/sofa55.png" id="image3" class="img-fluid" alt="Sofa Image 3">
+                  <img src="images/detail/sofa3.png" id="image3" class="img-fluid" alt="Sofa Image 3">
                 </div>
                 <div class="col-3">
-                  <img src="images/detail/sofa66.png" id="image4" class="img-fluid" alt="Sofa Image 4">
+                  <img src="images/detail/SS.png" id="image3" class="img-fluid" alt="Sofa Image 3">
                 </div>
               </div>
             
@@ -129,14 +129,14 @@
               </div>
               <h3>Taill :</h3>
               <div class="row">
-                <div class="col care tree text-center">L</div>
-                <div class="col care tree text-center">M</div>
-                <div class="col care tree text-center">S</div>
+                <div class="col care palett text-center">L</div>
+                <div class="col care palett text-center">M</div>
+                <div class="col care palett text-center">S</div>
               </div>
             </div>
             <div class="col">
               <!-- Button trigger modal -->
-              <button type="button" class="btn bg-white border border-dark" data-bs-toggle="modal"
+              <button type="button" class="btn bg-white border border-dark ask" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 <i class="fa-solid fa-envelope"></i> Ask about this product
               </button>
@@ -152,21 +152,21 @@
                     </div>
                     <div class="modal-body">
                       <h3>Have any questions ?</h3>
-                      <form>
+                      <form name="form1" onsubmit = "return(validate());">
                         <div class="mb-3">
-                          <input type="text" class="form-control" id="name" placeholder="Enter your name :">
+                          <input type="text" class="form-control" id="name" name="name1"placeholder="Enter your name :" required>
                         </div>
                         <div class="mb-3">
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Enter your message:"></textarea>
+                            placeholder="Enter your message:" required></textarea>
                         </div>
   
                         <div class="mb-3">
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter your email:">
+                            placeholder="Enter your email:" name="email1" required>
                         </div>
                         <div class="text-end">
-                          <button type="submit" class="btn btn-dark "><i class="fa-regular fa-paper-plane"
+                          <button type="submit" class="btn btn-dark " ><i class="fa-regular fa-paper-plane"
                               style="color: #f4f5f6;"></i> envoyer</button>
                         </div>
                       </form>
@@ -211,35 +211,39 @@
             <button class="btn  dropdown-toggle w-100 text-start " type="button" id="dropdownMenuButton1"
               data-bs-toggle="dropdown" aria-expanded="false">
               Review
-            </button>
+            </button> 
             <ul class="dropdown-menu formulair" aria-labelledby="dropdownMenuButton1">
               <li>
                 <div class="dropdown-item ">
-                  <form class="formulaire">
+                  <!--------------------------------------------------------------->
+                  <form class="formulaire" name="form2" onsubmit = "return(validate());">
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">Name :</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name :">
+                      <label for="exampleFormControlInput1" class="form-label" >Name :</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name :" name="name2" required>
                     </div>
   
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                      <label for="exampleFormControlInput1" class="form-label" >Email:</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter your email:">
+                        placeholder="Enter your email:" name="email2" required>
                     </div>
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">Review titele :</label>
-                      <input type="text" class="form-control" id="title" placeholder="Enter your title review :">
+                      <input type="text" class="form-control" id="title" placeholder="Enter your title review :" required>
                     </div>
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">Review</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Enter your Review:"></textarea>
+                        placeholder="Enter your Review:" required></textarea>
                     </div>
                     <div class="text-end">
-                      <button type="submit" class="btn btn-dark "><i class="fa-regular fa-paper-plane"
-                          style="color: #f4f5f6;"></i> envoyer</button>
+                      <button type="submit" class="btn btn-dark " ><i class="fa-regular fa-paper-plane"
+                        style="color: #f4f5f6;"></i> envoyer</button>
                     </div>
                   </form>
+
+                 <!--------------------------------------------------------------------------->
+
                 </div>
               </li>
             </ul>
@@ -325,7 +329,7 @@
                 </div>
               </div>
               <a class="carousel-control-prev " href="#team-carousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next " href="#team-carousel" role="button" data-slide="next">

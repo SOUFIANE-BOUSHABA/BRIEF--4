@@ -8,9 +8,7 @@ header{
     z-index: 100;
     
 }
-a{
-    text-decoration: none;
-}
+
 
 main .container{
     margin-bottom: 70px;
@@ -90,7 +88,10 @@ main .container{
 }
 
 
-  
+  footer a{
+      color: #fff;
+  }
+
 footer a:hover{
 opacity: .7;
 }
@@ -104,6 +105,81 @@ footer .row .col-5 .btn{
     border:1px solid white;
     color: white;
 }
+
+.images--about{
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+.images--about2{
+    justify-content: start;
+}
+.images--about img{
+    height: 300px;
+    width: 100%;
+}
+.col-md-6 p{
+    line-height: 2;
+    opacity: .7;
+}
+.title--about{
+    display: grid;
+    place-content: start;
+    text-align: left;
+}
+.container .ligne{
+    justify-content: start;
+    text-align: left;
+    background: black;
+    height: 3px;
+    width: 70px;
+}
+.container .row .col-md-6 p{
+    text-align: justify;
+}
+.GALLERY img{
+    filter: brightness(80%);
+    cursor: pointer;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.image-container img {
+    transition: transform 0.3s;
+}
+
+.image-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: #fff;
+}
+
+.image-container:hover .image-details {
+    opacity: 1; 
+    transition: transform 0.3s;
+}
+
+
+.fade-in-element {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
 
 /* team */
 .rounded-circle--team img{
@@ -182,7 +258,7 @@ p{
     text-align: start;
     bottom: 80px;
 }
-.container .img-fluid{
+.container .img-fluiddd{
     height: auto;
     width: 80%;
     
@@ -242,7 +318,13 @@ p{
 
 /* =========footer=========== */
 
+
     .text-reset {
         color: #fff !important;
     }
       
+
+.text-reset {
+     color: white !important; 
+}
+

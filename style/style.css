@@ -324,6 +324,18 @@ p{
     font-size: 1.6rem;
 }
 
+/* =================contact================== */
+.g-3{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+}
+
+p.text-black-50.bg-white {
+    margin-bottom: 0;
+}
+
 /* =========footer=========== */
 
 

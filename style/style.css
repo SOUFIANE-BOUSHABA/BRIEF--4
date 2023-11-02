@@ -242,11 +242,6 @@ p{
     .container .item {
         text-align: center;
       }
-      [class*="col-"] {
-        padding-right: 0;
-        padding-left: 0;
-        text-align: center;
-      }
 }
 .form-inline{
     display: flex;

@@ -160,6 +160,7 @@ h5{
     width: 30px;
     margin: 10px;
     padding: 0px;
+    cursor: pointer;
 }
 .one{
     background-color: black;
@@ -169,6 +170,13 @@ h5{
 }
 .tree{
     background-color: rgba(0, 0, 0, 0.104);
+}
+.palett{
+    background-color: rgba(0, 0, 0, 0.104);
+}
+.palett:hover{
+    color: #fff;
+    background-color: black;
 }
 .dropdown-item{
     max-width: 500px;
@@ -186,4 +194,5 @@ h5{
 img{
     border-radius: 10px;
 }
+
 /*******************/

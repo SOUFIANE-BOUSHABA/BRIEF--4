@@ -349,3 +349,13 @@ p.text-black-50.bg-white {
 }
 
 
+.rounded-circle--team{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:600px){
+    .asistancce{
+        width: 200px;
+    }
+}

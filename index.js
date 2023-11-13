@@ -1,12 +1,13 @@
 
 var mainImage = document.getElementById("imageprin");
 var smallImages = document.querySelectorAll("#image1, #image2, #image3");
-for (let i = 0; i < smallImages.length; i++) {
-    smallImages[i].addEventListener("click", function() {
-        var newImageSrc = smallImages[i].getAttribute("src");
+
+smallImages.forEach(element => {
+    element.addEventListener("click", function() {
+        var newImageSrc = element.getAttribute("src");
         mainImage.setAttribute("src", newImageSrc);
     });
-}
+});
 
 
 
@@ -18,6 +19,7 @@ function handleScroll() {
         }
     }
 }
+
 function viewinSecrin(el) { 
     const rect = el.getBoundingClientRect();
     return (
